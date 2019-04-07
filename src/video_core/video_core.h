@@ -31,11 +31,7 @@ extern std::atomic<bool> g_hw_shader_enabled;
 extern std::atomic<bool> g_hw_shader_accurate_gs;
 extern std::atomic<bool> g_hw_shader_accurate_mul;
 extern std::atomic<bool> g_renderer_bg_color_update_requested;
-// Screenshot
-extern std::atomic<bool> g_renderer_screenshot_requested;
-extern void* g_screenshot_bits;
-extern std::function<void()> g_screenshot_complete_callback;
-extern Layout::FramebufferLayout g_screenshot_framebuffer_layout;
+extern std::atomic<bool> g_use_format_reinterpret_hack;
 
 extern Memory::MemorySystem* g_memory;
 
